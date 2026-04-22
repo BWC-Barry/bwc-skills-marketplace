@@ -1,0 +1,24 @@
+{
+  "name": "bwc-skills",
+  "owner": {
+    "name": "Bloom with Colour",
+    "email": "tim@bwc-concepts.nl"
+  },
+  "description": "Officiële BWC Skills Marketplace voor het office team — bevat alle skills die Barry heeft geleerd (Morning Briefing, Eventlink, Productieformulier, Facturen Bijwerken, Invoice Reminder, Social Media Manager).",
+  "plugins": [
+    {
+      "name": "bwc-office-skills",
+      "source": "./plugins/bwc-office-skills",
+      "description": "Alle 6 BWC office-skills in één bundel. Eén install, alle tools beschikbaar.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Tim Poelmans",
+        "email": "tim@bwc-concepts.nl"
+      },
+      "homepage": "https://github.com/bwc-concepts/skills-marketplace",
+      "license": "Proprietary",
+      "keywords": ["bwc", "bloom-with-colour", "office", "nightlife", "events"],
+      "strict": false
+    }
+  ]
+}

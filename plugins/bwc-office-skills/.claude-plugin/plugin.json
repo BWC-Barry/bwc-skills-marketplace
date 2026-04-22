@@ -1,0 +1,22 @@
+{
+  "name": "bwc-office-skills",
+  "version": "1.0.0",
+  "description": "Barry's complete toolkit voor het BWC office team",
+  "author": {
+    "name": "Tim Poelmans",
+    "email": "tim@bwc-concepts.nl"
+  },
+  "homepage": "https://github.com/bwc-concepts/skills-marketplace",
+  "license": "Proprietary",
+  "keywords": ["bwc", "office", "nightlife"],
+  "commands": [],
+  "agents": [],
+  "skills": [
+    "./skills/morning-briefing",
+    "./skills/eventlink",
+    "./skills/productieformulier",
+    "./skills/facturen-bijwerken",
+    "./skills/invoice-reminder",
+    "./skills/social-media-manager"
+  ]
+}
