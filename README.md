@@ -18,11 +18,11 @@ Dit is de centrale repo waar alle BWC-skills wonen. Als Tim een skill aanpast of
 4. Plak deze URL:
 
    ```
-   bwc-concepts/skills-marketplace
+   BWC-Barry/bwc-skills-marketplace
    ```
 
 5. Klik op **"BWC Concepts Skills"** in de lijst → **Install**.
-6. Klaar! Barry heeft nu alle 6 skills paraat.
+6. Klaar! Barry heeft nu alle 7 skills paraat.
 
 ### Na de install
 
@@ -54,12 +54,13 @@ Voor elke skill is er een **installatie-dialoog**: Barry loopt je bij eerste geb
 
 | # | Skill | Wat doet 'ie? | Voor wie? |
 |---|---|---|---|
-| 1 | 🌅 Morning Briefing | Dagstart met agenda + mails | Iedereen |
-| 2 | 🎟 Eventlink | Ticket- en gastenlijstlinks via Weeztix | Projectmanagers |
-| 3 | 📋 Productieformulier | Automatisch ingevulde productieformulieren | Advancing |
-| 4 | 💶 Facturen Bijwerken | Wekelijkse factuurverwerking | Finance |
-| 5 | 📧 Invoice Reminder | DJ-factuurherinneringen via Gmail | Finance |
-| 6 | 📸 Social Media Manager | Content voor alle BWC-concepten | Marketing |
+| 1 | 🧠 BWC Context | Organisatie-kennisbank (team, concepten, venues) | Iedereen — auto-load |
+| 2 | 🌅 Morning Briefing | Dagstart met agenda + mails | Iedereen |
+| 3 | 🎟 Eventlink | Ticket- en gastenlijstlinks via Weeztix | Projectmanagers |
+| 4 | 📋 Productieformulier | Automatisch ingevulde productieformulieren | Advancing |
+| 5 | 💶 Facturen Bijwerken | Wekelijkse factuurverwerking | Finance |
+| 6 | 📧 Invoice Reminder | DJ-factuurherinneringen via Gmail | Finance |
+| 7 | 📸 Social Media Manager | Content voor alle BWC-concepten | Marketing |
 
 ## Structuur van deze repo
 
@@ -72,6 +73,8 @@ bwc-skills-marketplace/
 │       ├── .claude-plugin/
 │       │   └── plugin.json      ← plugin metadata
 │       └── skills/
+│           ├── bwc-context/          ← organisatie-kennisbank (auto-loads)
+│           │   └── SKILL.md
 │           ├── morning-briefing/
 │           │   ├── SKILL.md
 │           │   └── ...

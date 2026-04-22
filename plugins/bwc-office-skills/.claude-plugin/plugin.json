@@ -6,12 +6,13 @@
     "name": "Tim Poelmans",
     "email": "tim@bwc-concepts.nl"
   },
-  "homepage": "https://github.com/bwc-concepts/skills-marketplace",
+  "homepage": "https://github.com/BWC-Barry/bwc-skills-marketplace",
   "license": "Proprietary",
   "keywords": ["bwc", "office", "nightlife"],
   "commands": [],
   "agents": [],
   "skills": [
+    "./skills/bwc-context",
     "./skills/morning-briefing",
     "./skills/eventlink",
     "./skills/productieformulier",
