@@ -20,9 +20,12 @@ De output is een **HTML-bestand** dat wordt opgeslagen in de workspace en direct
 
 ## Stap 1 — Stel de identiteit vast
 
-Lees het gebruikersprofiel als dat beschikbaar is (zie Stap 6 voor profielstructuur). Als er geen profiel is, vraag dan kort: "Wie ben je en wat is je rol bij BWC?" — en sla het daarna op.
+Lees het gebruikersprofiel als dat beschikbaar is (zie Stap 6 voor profielstructuur). Als er geen profiel is, vraag dan kort het volgende — en sla het daarna op:
 
-Gebruik de naam en rol bij het personaliseren van de briefing en het filteren van relevante informatie.
+1. "Wie ben je en wat is je rol bij BWC?"
+2. "Wat is jouw BWC-e-mailadres?" — **verplicht met `bwc` in de naam** (bijv. `kelvinbwc@gmail.com`, `ninabwc@gmail.com`, `timpoelmansbwc@gmail.com`). Bevat het adres geen `bwc`? → vraag opnieuw, alle BWC-werk-accounts hebben `bwc` in de naam.
+
+Gebruik de naam en rol bij het personaliseren van de briefing en het filteren van relevante informatie. Gebruik het e-mailadres (`{USER_EMAIL}`) voor de Google Calendar / Gmail MCP calls.
 
 ---
 
@@ -558,9 +561,11 @@ Als er nog geen profielbestand bestaat, maak dan aan:
   "rol": "Stagiair / Innovatieproject",
   "focus": ["acquisitie", "skills", "innovatie"],
   "concepten": ["alle"],
-  "email": "timpoelmansbwc@gmail.com"
+  "email": "{USER_EMAIL}"
 }
 ```
+
+> `{USER_EMAIL}` is het BWC-mailadres dat de gebruiker in Stap 1 heeft opgegeven (met `bwc` in de naam).
 
 Bij volgende briefings wordt dit profiel automatisch ingeladen om de briefing te personaliseren (naam in de header, gefilterde mails op basis van rol, relevante events).
 

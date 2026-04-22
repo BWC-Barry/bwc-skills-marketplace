@@ -17,6 +17,26 @@ een BWC Concepts event, op basis van het Artist Program en de contactenlijsten.
 
 ---
 
+## 🔧 Eerste keer? Even jezelf instellen
+
+Deze skill is voor het hele BWC-team (meestal Advancing). Bij de eerste run bij een nieuwe gebruiker, vraag en onthoud deze twee waarden voor de rest van de sessie:
+
+**1. BWC-e-mailadres (`{USER_EMAIL}`)** — **verplicht met `bwc` in de naam**.
+
+- Vraag: "Wat is jouw BWC-e-mailadres voor Google Drive?"
+- Valideer: het adres MOET de letters `bwc` bevatten (bijv. `kelvinbwc@gmail.com`, `ninabwc@gmail.com`, `timpoelmansbwc@gmail.com`).
+- Bevat het adres geen `bwc`? → vraag opnieuw. Dit is bewust — alle BWC-werk-accounts hebben `bwc` in de naam.
+
+**2. Google authuser-index (`{AUTH_USER}`)** — welk account in Chrome.
+
+- Open `drive.google.com` in Chrome en kijk naar de URL. Als je ingelogd bent met meerdere Google-accounts zie je `/u/X/` waarin `X` een getal is.
+- Vraag: "Welk getal staat er bij jou na `/u/` in de Drive URL?"
+- Typische waarden: `0` (eerste account), `1`, `2`, `3`, `4` (Tim).
+
+Gebruik `{USER_EMAIL}` en `{AUTH_USER}` overal in de rest van deze skill.
+
+---
+
 ## Databronnen
 
 ### 1. Template spreadsheet
@@ -58,7 +78,7 @@ Navigeer naar het Artist Program spreadsheet en zoek het event op:
 - Timetable: tijdslots + DJ-namen
 
 ### Stap 2: Maak kopie van template
-1. Open het template spreadsheet in de browser (Google account u/4 = timpoelmansbwc@gmail.com)
+1. Open het template spreadsheet in de browser (Google account u/{AUTH_USER} = {USER_EMAIL})
 2. Ga naar Bestand → Kopie maken
 3. Geef de kopie de naam: `Productieformulier [Event naam] [DD-MM-YYYY]`
    Voorbeeld: `Productieformulier Novia Saturdays 28-03-2026`
@@ -179,4 +199,4 @@ Laat B24–B26, C24–C26, D24–D26 leeg als er maar 1 doorhost is.
 - Template wordt gekopieerd via browser (Bestand → Kopie maken)
 - Navigeer naar cellen via de **Name Box** (cel-referentie linksboven)
 - Bevestig elke cel-invoer met **Enter** (niet Tab — dat zorgt voor concatenatie in dezelfde cel)
-- Google account voor Drive: **u/4** = timpoelmansbwc@gmail.com
+- Google account voor Drive: **u/{AUTH_USER}** = {USER_EMAIL}

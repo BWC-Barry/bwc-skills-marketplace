@@ -12,8 +12,24 @@ description: >
 
 # BWC Concepts — Social Media Manager
 
+---
+
+## 🔧 Eerste keer? Even jezelf instellen
+
+Deze skill is voor het hele BWC-team (meestal Marketing). Bij de eerste run bij een nieuwe gebruiker, vraag en onthoud deze waarde voor de rest van de sessie:
+
+**BWC-e-mailadres (`{USER_EMAIL}`)** — **verplicht met `bwc` in de naam**.
+
+- Vraag: "Wat is jouw BWC-e-mailadres voor Google Drive?"
+- Valideer: het adres MOET de letters `bwc` bevatten (bijv. `kelvinbwc@gmail.com`, `ninabwc@gmail.com`, `timpoelmansbwc@gmail.com`).
+- Bevat het adres geen `bwc`? → vraag opnieuw. Dit is bewust — alle BWC-werk-accounts hebben `bwc` in de naam.
+
+Gebruik `{USER_EMAIL}` overal in de rest van deze skill waar het voorkomt.
+
+---
+
 ## Doel
-Maak complete, kant-en-klare social media content voor BWC Concepts evenementen — zodat Tim alleen nog maar op "Posten" hoeft te klikken:
+Maak complete, kant-en-klare social media content voor BWC Concepts evenementen — zodat de gebruiker alleen nog maar op "Posten" hoeft te klikken:
 1. Analyseer live de laatste Instagram posts (nooit vertrouwen op opgeslagen voorbeelden)
 2. Zoek passende foto's in Google Drive en download ze direct
 3. Controleer of foto's al gepost zijn op Instagram
@@ -60,10 +76,10 @@ Ga naar de profielpagina van het account, haal de links op van de laatste 8-10 p
 
 ### Stap 3 — Zoek passende foto's in Google Drive
 
-Navigeer via Chrome naar Google Drive van **timpoelmansbwc@gmail.com**:
+Navigeer via Chrome naar Google Drive van **{USER_EMAIL}**:
 
 **Pad naar de foto's:**
-1. Ga naar `drive.google.com` (Tim is al ingelogd als timpoelmansbwc@gmail.com)
+1. Ga naar `drive.google.com` (zorg dat je ingelogd bent als {USER_EMAIL})
 2. Klik op **"Gedeeld met mij"** (Shared with me)
 3. Open: **"BLOOM WITH COLOUR - Editie foto's"**
 4. Navigeer naar **"[1] 2026"** voor de meest recente evenementfoto's

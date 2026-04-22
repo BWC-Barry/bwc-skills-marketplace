@@ -18,10 +18,30 @@ Verwerk alle nieuwe facturen van de afgelopen week in de **BWC Facturen 2026** s
 
 ---
 
+## 🔧 Eerste keer? Even jezelf instellen
+
+Deze skill is voor het hele BWC-team (meestal Finance). Bij de eerste run bij een nieuwe gebruiker, vraag en onthoud deze twee waarden voor de rest van de sessie:
+
+**1. BWC-e-mailadres (`{USER_EMAIL}`)** — **verplicht met `bwc` in de naam**.
+
+- Vraag: "Wat is jouw BWC-e-mailadres voor Google Drive?"
+- Valideer: het adres MOET de letters `bwc` bevatten (bijv. `kelvinbwc@gmail.com`, `ninabwc@gmail.com`, `timpoelmansbwc@gmail.com`).
+- Bevat het adres geen `bwc`? → vraag opnieuw. Dit is bewust — alle BWC-werk-accounts hebben `bwc` in de naam.
+
+**2. Google authuser-index (`{AUTH_USER}`)** — welk account in Chrome.
+
+- Open `drive.google.com` in Chrome en kijk naar de URL. Als je ingelogd bent met meerdere Google-accounts zie je `/u/X/` waarin `X` een getal is.
+- Vraag: "Welk getal staat er bij jou na `/u/` in de Drive URL?"
+- Typische waarden: `0` (eerste account), `1`, `2`, `3`, `4` (Tim).
+
+Gebruik `{USER_EMAIL}` en `{AUTH_USER}` overal in de rest van deze skill.
+
+---
+
 ## Spreadsheet
 
-- **URL (edit mode):** `https://docs.google.com/spreadsheets/u/4/d/1JMOqjbIpKhbXH4-kK3AXymgRbiJWzCB_J6mXRUoFD20/edit`
-- **Google account:** authuser=4 (`timpoelmansbwc@gmail.com`) — gebruik altijd `/u/4/` in Drive-URLs
+- **URL (edit mode):** `https://docs.google.com/spreadsheets/u/{AUTH_USER}/d/1JMOqjbIpKhbXH4-kK3AXymgRbiJWzCB_J6mXRUoFD20/edit`
+- **Google account:** authuser={AUTH_USER} (`{USER_EMAIL}`) — gebruik altijd `/u/{AUTH_USER}/` in Drive-URLs
 - **Structuur:** Tabel3, kolommen: **Wie | Factuurnummer | Bedrag | Evenement + datum**
 - **Tabblad:** gebruik het tabblad dat overeenkomt met de huidige maand (Januari, Februari, Maart, April, etc.)
 - **Bedrag:** vul alleen het getal in (geen €-teken) — de kolom heeft al valuta-opmaak
@@ -35,7 +55,7 @@ Volg deze stappen volledig voordat je ook maar iets in de spreadsheet invoert.
 
 ### Drive-mappen om te controleren
 
-Gebruik altijd `/u/4/` in Drive-URLs. Controleer alle onderstaande mappen op nieuwe facturen voor de huidige maand.
+Gebruik altijd `/u/{AUTH_USER}/` in Drive-URLs. Controleer alle onderstaande mappen op nieuwe facturen voor de huidige maand.
 
 #### BWC Events
 - Zoek in Google Drive op: **"Facturen - BWC 2026 (Karin Janssen)"**
@@ -51,7 +71,7 @@ Gebruik altijd `/u/4/` in Drive-URLs. Controleer alle onderstaande mappen op nie
 
 ### Werkwijze per map
 
-1. Open de map via Google Drive (authuser=4)
+1. Open de map via Google Drive (authuser={AUTH_USER})
 2. Haal **alle** file IDs op in één keer via JavaScript:
    ```javascript
    Array.from(document.querySelectorAll('[data-id]')).map(el => el.getAttribute('data-id'))
@@ -113,7 +133,7 @@ Als een cel niet reageert op typen:
 
 ## Afsluiting
 
-Stuur een korte samenvatting via de Gmail MCP tool naar `timpoelmansbwc@gmail.com` met:
+Stuur een korte samenvatting via de Gmail MCP tool naar `{USER_EMAIL}` met:
 - Hoeveel nieuwe facturen zijn verwerkt
 - Per event een overzicht (Wie, Factuurnummer, Bedrag)
 - Eventuele overgeslagen of onleesbare bestanden

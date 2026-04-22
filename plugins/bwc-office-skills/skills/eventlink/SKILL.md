@@ -8,6 +8,22 @@ description: >
 
 Je maakt ticketlinks en/of gastenlijstlinks aan in Weeztix en zet ze daarna in het Google Doc "Ticketlinks BWC".
 
+---
+
+## 🔧 Eerste keer? Even jezelf instellen
+
+Deze skill is voor het hele BWC-team. Bij de eerste run bij een nieuwe gebruiker, vraag en onthoud deze waarde voor de rest van de sessie:
+
+**BWC-e-mailadres (`{USER_EMAIL}`)** — **verplicht met `bwc` in de naam**.
+
+- Vraag: "Wat is jouw BWC-e-mailadres voor Google Drive / Gmail?"
+- Valideer: het adres MOET de letters `bwc` bevatten (bijv. `kelvinbwc@gmail.com`, `ninabwc@gmail.com`, `timpoelmansbwc@gmail.com`).
+- Bevat het adres geen `bwc`? → vraag opnieuw. Dit is bewust — alle BWC-werk-accounts hebben `bwc` in de naam.
+
+Gebruik `{USER_EMAIL}` overal in de rest van deze skill waar het voorkomt.
+
+---
+
 ## Wat je nodig hebt van Tim (vraag dit vooraf als het nog niet gegeven is)
 
 1. **Eventnaam** — zoals hij in Weeztix en het document komt te staan (Tim geeft dit altijd zelf aan)
@@ -21,7 +37,7 @@ Als een van deze punten ontbreekt, vraag het dan vóórdat je begint.
 
 ## Stap 0: Controleer het Google-account in de browser
 
-Navigeer naar `https://myaccount.google.com` en controleer of je bent ingelogd als **timpoelmansbwc@gmail.com**. Zo niet, switch eerst naar dat account via `https://accounts.google.com/AccountChooser?Email=timpoelmansbwc@gmail.com`.
+Navigeer naar `https://myaccount.google.com` en controleer of je bent ingelogd als **{USER_EMAIL}**. Zo niet, switch eerst naar dat account via `https://accounts.google.com/AccountChooser?Email={USER_EMAIL}`.
 
 ---
 
@@ -108,7 +124,7 @@ Als er zowel een gastenlijst- als een ticketlink gemaakt moet worden, herhaal da
 
 ## Stap 6: Update het Google Doc "Ticketlinks BWC"
 
-1. Open het document via Google Drive (account: timpoelmansbwc@gmail.com):
+1. Open het document via Google Drive (account: {USER_EMAIL}):
    - URL: `https://docs.google.com/document/d/1xzblT-6OmZukkpVfv8rOtDhr6Ufs0hei/edit`
 2. Zoek de juiste plek in het document op basis van de maand en het weeknummer
 3. Voeg het event toe in dit formaat:
