@@ -10,19 +10,22 @@ Dit is de centrale repo waar alle BWC-skills wonen. Als Tim een skill aanpast of
 
 ## Voor medewerkers — installatie in Cowork
 
-### Eenmalige setup (3 minuten)
+### Eenmalige setup (2 minuten)
 
-1. Open de **Claude desktop app** en zorg dat **Cowork mode** aanstaat.
-2. Ga naar **Settings → Plugins → Marketplaces**.
-3. Klik op **"Add marketplace"**.
-4. Plak deze URL:
+1. Open de **Claude desktop app**.
+2. Ga naar **Customize**.
+3. Klik op **Browse plugins**.
+4. Tabblad **Personal**.
+5. Klik op het **plusje** (+).
+6. Plak deze regel:
 
    ```
    BWC-Barry/bwc-skills-marketplace
    ```
 
-5. Klik op **"BWC Concepts Skills"** in de lijst → **Install**.
-6. Klaar! Barry heeft nu alle 7 skills paraat.
+7. Bevestigen.
+8. Klik op **Install**.
+9. Klaar! Barry heeft nu alle skills paraat.
 
 ### Na de install
 
