@@ -1,6 +1,6 @@
 {
   "name": "bwc-office-skills",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "Barry's complete toolkit voor het BWC office team",
   "author": {
     "name": "Tim Poelmans",
@@ -18,6 +18,8 @@
     "./skills/productieformulier",
     "./skills/facturen-bijwerken",
     "./skills/invoice-reminder",
-    "./skills/social-media-manager"
+    "./skills/social-media-manager",
+    "./skills/brand-mapper",
+    "./skills/social-media-poster"
   ]
 }
